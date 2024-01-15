@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
 public class HungerSystem : MonoBehaviour
 {
-    int HungerPoint;
+    public int HungerPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,8 @@ public class HungerSystem : MonoBehaviour
     async void FixedUpdate()
     {
         HungerPoint -= 1;
-        await Task.Delay(1000);
+        int milliseconds = 2000;
+        Thread.Sleep(milliseconds);
     }
 
     public void AddHunger(int amount)
