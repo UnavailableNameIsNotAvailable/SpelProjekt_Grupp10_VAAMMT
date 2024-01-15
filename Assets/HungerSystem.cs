@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class HungerSystem : MonoBehaviour
@@ -13,9 +14,14 @@ public class HungerSystem : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    async void FixedUpdate()
     {
         HungerPoint -= 1;
-        Console.Write(HungerPoint);
+        await Task.Delay(1000);
+    }
+
+    public void AddHunger(int amount)
+    {
+        HungerPoint += amount;
     }
 }
