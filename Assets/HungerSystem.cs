@@ -11,13 +11,13 @@ public class HungerSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HungerPoint = 100;
+        HungerPoint = 10000;
     }
 
     // Update is called once per frame
     async void FixedUpdate()
     {
-        HungerPoint -= 1;
+        HungerPoint -= 2;
         await Task.Delay(10000);
     }
 
