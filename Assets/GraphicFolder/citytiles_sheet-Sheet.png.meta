@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,18 +108,344 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686d2cf769f4b5747a6e48a5dc4241cd
+      internalID: -1879389922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501ceb30b9feb434b9a73b93d4995069
+      internalID: -1970625352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26033954dbc4c2d4e9aef9f0831764b2
+      internalID: -656488327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3895b39a46d30674b81d8093c6e8142d
+      internalID: 1196317200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7210ed79dd4aacf4cac72dddfd4c8007
+      internalID: -624038395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7809590e7012e42925f6ad89656e51
+      internalID: 405731210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88828e37fe3d0f34d9c3e010628d8337
+      internalID: 72813480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 104
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70073712487e6d947a1e056cc5073ea2
+      internalID: 927609656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fdb9eed18cf054fa6c029a2105204a
+      internalID: 1291518114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2b86ea1578ef54a8b63dac400bae94
+      internalID: 955959496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cf9c8ef07bf7d4db175a5e71274f0d
+      internalID: 324633082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3282c264b6b79e949aef141277bc2efe
+      internalID: -561304218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: citytiles_sheet-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b15b5056d02ed44a771bb330f40ffd
+      internalID: 681891708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -180, y: 69}
+      - {x: -180, y: 100}
+      - {x: -148, y: 100}
+      - {x: -148, y: 69}
+    - - {x: -180, y: 35}
+      - {x: -180, y: 68}
+      - {x: -148, y: 68}
+      - {x: -148, y: 35}
+    - - {x: -148, y: 35}
+      - {x: -148, y: 68}
+      - {x: -116, y: 68}
+      - {x: -116, y: 35}
+    - - {x: -116, y: 35}
+      - {x: -116, y: 68}
+      - {x: -85, y: 68}
+      - {x: -85, y: 35}
+    - - {x: -116, y: 4}
+      - {x: -116, y: 35}
+      - {x: -85, y: 35}
+      - {x: -85, y: 4}
+    - - {x: -148, y: 4}
+      - {x: -148, y: 35}
+      - {x: -116, y: 35}
+      - {x: -116, y: 4}
+    - - {x: -180, y: 4}
+      - {x: -180, y: 35}
+      - {x: -148, y: 35}
+      - {x: -148, y: 4}
+    - - {x: -148, y: -60}
+      - {x: -148, y: -28}
+      - {x: -116, y: -28}
+      - {x: -116, y: -60}
+    - - {x: -180, y: -60}
+      - {x: -180, y: -28}
+      - {x: -148, y: -28}
+      - {x: -148, y: -60}
+    - - {x: -180, y: -28}
+      - {x: -180, y: 4}
+      - {x: -148, y: 4}
+      - {x: -148, y: -28}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      citytiles_sheet-Sheet_0: -1879389922
+      citytiles_sheet-Sheet_1: -1970625352
+      citytiles_sheet-Sheet_10: 324633082
+      citytiles_sheet-Sheet_11: -561304218
+      citytiles_sheet-Sheet_12: 681891708
+      citytiles_sheet-Sheet_2: -656488327
+      citytiles_sheet-Sheet_3: 1196317200
+      citytiles_sheet-Sheet_4: -624038395
+      citytiles_sheet-Sheet_5: 405731210
+      citytiles_sheet-Sheet_6: 72813480
+      citytiles_sheet-Sheet_7: 927609656
+      citytiles_sheet-Sheet_8: 1291518114
+      citytiles_sheet-Sheet_9: 955959496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
