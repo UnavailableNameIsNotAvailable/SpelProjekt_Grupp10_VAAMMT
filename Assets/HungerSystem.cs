@@ -18,8 +18,7 @@ public class HungerSystem : MonoBehaviour
     async void FixedUpdate()
     {
         HungerPoint -= 1;
-        int milliseconds = 2000;
-        Thread.Sleep(milliseconds);
+        await Task.Delay(10000);
     }
 
     public void AddHunger(int amount)
