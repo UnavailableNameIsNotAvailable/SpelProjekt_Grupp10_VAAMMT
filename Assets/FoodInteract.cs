@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class FoodInteract : MonoBehaviour
@@ -15,11 +17,16 @@ public class FoodInteract : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private async void OnCollisionEnter2D(Collision2D collision)
     {//Vid kollision så gömmer sig objektet.
         SpriteRenderer FoodRender = GetComponent<SpriteRenderer>();
         FoodRender.enabled = false;
         BoxCollider2D FoodCollider = GetComponent<BoxCollider2D>();
         FoodCollider.enabled = false;
+        //Efter en slumpmässig antal sekunder så respawnar maten.
+        int waitingTime = Random.Range(40000,100000);
+        await Task.Delay(waitingTime);
+        FoodRender.enabled = true;
+        FoodCollider.enabled = true;
     }
 }
