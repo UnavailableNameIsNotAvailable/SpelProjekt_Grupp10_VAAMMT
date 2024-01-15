@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class UI_Hunger : MonoBehaviour
 {
+    [SerializeField]
     HungerSystem hungerpoint;
 
     [SerializeField]
@@ -20,7 +21,7 @@ public class UI_Hunger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string HungerNumber = hungerpoint + "%";
+        string HungerNumber = hungerpoint.HungerPoint + "%";
         TextComponent.text = HungerNumber;
         
     }
