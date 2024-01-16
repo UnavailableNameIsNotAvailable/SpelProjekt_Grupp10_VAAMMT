@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField]
-    GameObject player;
+    GameObject Player;
 
     Vector3 velocity;
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 targetPosition = player.transform.position + new Vector3(0, 0, -10);
+        Vector3 targetPosition = Player.transform.position + new Vector3(0, 0, -10);
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, 0.2f);
     }
 }
