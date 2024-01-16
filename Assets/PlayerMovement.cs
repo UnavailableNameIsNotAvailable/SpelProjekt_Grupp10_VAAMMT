@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField]
+    private AudioClip Footstep1;
     public float speed = 6f;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -26,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
 
         // Move the player
         transform.Translate(movement * speed * Time.deltaTime);
+        
+    }
+    public void FootstepFunktion()
+    {
+        AudioSource.PlayClipAtPoint(Footstep1, transform.position);
     }
 }
 

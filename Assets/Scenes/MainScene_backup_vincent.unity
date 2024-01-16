@@ -17338,6 +17338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 868d91f710df0bb4d8f5c542dfe6fabc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Footstep1: {fileID: 8300000, guid: 8150078a5d6627d4da188dbdfbfcab84, type: 3}
   speed: 4
 --- !u!61 &1440261630
 BoxCollider2D:
@@ -24512,6 +24513,7 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1440261634}
   - {fileID: 1223457683}
   - {fileID: 1135008873}
   - {fileID: 111613801}
@@ -24555,7 +24557,6 @@ SceneRoots:
   - {fileID: 1752352393}
   - {fileID: 1962951274}
   - {fileID: 1879440140}
-  - {fileID: 1440261634}
   - {fileID: 267194900}
   - {fileID: 694914901}
   - {fileID: 1644399786}

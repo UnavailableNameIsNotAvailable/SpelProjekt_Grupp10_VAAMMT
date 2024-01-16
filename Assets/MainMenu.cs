@@ -10,5 +10,5 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
-    
+    //kod av TigranK
 }
