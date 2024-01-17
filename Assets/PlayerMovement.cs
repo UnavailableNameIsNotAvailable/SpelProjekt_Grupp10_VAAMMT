@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    //vissa delar av koden är av Tigrans
     [SerializeField]
     private AudioClip Footstep1;
     public float speed = 6f;

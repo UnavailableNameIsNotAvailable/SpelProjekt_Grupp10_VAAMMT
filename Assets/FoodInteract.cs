@@ -7,11 +7,12 @@ using UnityEngine;
 public class FoodInteract : MonoBehaviour
 {
     HungerSystem hunger;
-
+    AudioSource foodPickUp;
     // Start is called before the first frame update
     void Start()
     {
         hunger = FindObjectOfType<HungerSystem>();
+        foodPickUp = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,5 +32,9 @@ public class FoodInteract : MonoBehaviour
         await Task.Delay(waitingTime);
         FoodRender.enabled = true;
         FoodCollider.enabled = true;
+
+        foodPickUp.Play();
+
+
     }
 }
