@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HungerSystem : MonoBehaviour
-{
+{//Skript av Vincent 
     public bool StatusAlive;
     public float HungerPoint;
     // Start is called before the first frame update
@@ -25,10 +26,11 @@ public class HungerSystem : MonoBehaviour
         }
     }
     void Update()
-    {
+    {//Om Hungerpoint < 1 så ändras karaktärens status till död.
         if (HungerPoint < 1)
         {
             StatusAlive = false;
+            SceneManager.LoadSceneAsync(2);
         }
     }
 

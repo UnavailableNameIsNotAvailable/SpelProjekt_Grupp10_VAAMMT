@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene_backup_vincent.unity
     guid: 7061afc1bb968074fafa4fb23b4dd312
+  - enabled: 1
+    path: Assets/Scenes/Death Scene.unity
+    guid: 128658e88482da0449fcb138b4820503
   m_configObjects: {}
