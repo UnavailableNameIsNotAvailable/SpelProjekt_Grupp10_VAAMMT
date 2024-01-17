@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class HungerSystem : MonoBehaviour
 {
-    public int HungerPoint;
+    public float HungerPoint;
     // Start is called before the first frame update
     void Start()
     {//startar med 100
@@ -15,13 +15,11 @@ public class HungerSystem : MonoBehaviour
     }
 
     // Update is called once per frame
-    async void FixedUpdate()
+    void FixedUpdate()
     {//Minskar med 1 varje hunger tick
         if (true)
         {
-        int hungertick = 2000;
-        HungerPoint -= 1;
-        await Task.Delay(hungertick);
+        HungerPoint -= 1 * Time.deltaTime;
         }
     }
 
