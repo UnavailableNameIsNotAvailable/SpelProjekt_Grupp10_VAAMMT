@@ -26,8 +26,8 @@ public class FoodInteract : MonoBehaviour
         BoxCollider2D FoodCollider = GetComponent<BoxCollider2D>();
         FoodCollider.enabled = false;
         hunger.AddHunger(15);
-        //Efter en slumpmässig antal sekunder så respawnar maten.
-        int waitingTime = Random.Range(40000,90000);
+        //Efter en slumpmässig antal sekunder mellan en och två minuter så respawnar maten.
+        int waitingTime = Random.Range(60000,120000);
         await Task.Delay(waitingTime);
         FoodRender.enabled = true;
         FoodCollider.enabled = true;

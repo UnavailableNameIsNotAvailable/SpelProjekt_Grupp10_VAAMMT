@@ -7,11 +7,13 @@ using UnityEngine;
 
 public class HungerSystem : MonoBehaviour
 {
+    public bool StatusAlive;
     public float HungerPoint;
     // Start is called before the first frame update
     void Start()
     {//startar med 100
         HungerPoint = 100;
+        StatusAlive = true;
     }
 
     // Update is called once per frame
@@ -20,6 +22,13 @@ public class HungerSystem : MonoBehaviour
         if (true)
         {
         HungerPoint -= 1 * Time.deltaTime;
+        }
+    }
+    void Update()
+    {
+        if (HungerPoint < 1)
+        {
+            StatusAlive = false;
         }
     }
 
