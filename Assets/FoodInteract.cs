@@ -37,7 +37,5 @@ public class FoodInteract : MonoBehaviour
         FoodRender.enabled = true;
         FoodCollider.enabled = true;
 
-
-
     }
 }
