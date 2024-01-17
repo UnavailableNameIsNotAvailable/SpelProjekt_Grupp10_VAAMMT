@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HungerSystem : MonoBehaviour
-{
-    public int HungerPoint;
+{//Skript av Vincent 
+    public float HungerPoint;
     // Start is called before the first frame update
     void Start()
     {//startar med 100
@@ -15,13 +16,18 @@ public class HungerSystem : MonoBehaviour
     }
 
     // Update is called once per frame
-    async void FixedUpdate()
+    void FixedUpdate()
     {//Minskar med 1 varje hunger tick
         if (true)
         {
-        int hungertick = 2000;
-        HungerPoint -= 1;
-        await Task.Delay(hungertick);
+        HungerPoint -= 1 * Time.deltaTime;
+        }
+    }
+    void Update()
+    {//Om Hungerpoint < 1 så hamnar man i death screen scenet.
+        if (HungerPoint < 1)
+        {
+            SceneManager.LoadSceneAsync(2);
         }
     }
 

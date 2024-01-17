@@ -21,7 +21,7 @@ public class UI_Hunger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string HungerNumber = hungerpoint.HungerPoint + "HP";
+        string HungerNumber = Mathf.Round(hungerpoint.HungerPoint) + "HP";
         TextComponent.text = HungerNumber;
         
     }

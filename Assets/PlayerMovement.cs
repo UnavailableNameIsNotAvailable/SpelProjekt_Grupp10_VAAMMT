@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    //vissa delar av koden är av Tigrans
     [SerializeField]
     private AudioClip Footstep1;
     public float speed = 6f;
@@ -12,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     {
         
     }
+
 
     // Update is called once per frame
     void FixedUpdate()
