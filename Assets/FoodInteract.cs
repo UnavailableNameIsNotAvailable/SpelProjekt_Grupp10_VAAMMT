@@ -21,7 +21,11 @@ public class FoodInteract : MonoBehaviour
         
     }
     private async void OnCollisionEnter2D(Collision2D collision)
-    {//Vid kollision så gömmer sig objektet.
+    {
+        foodPickUp.Play();
+
+
+        //Vid kollision så gömmer sig objektet.
         SpriteRenderer FoodRender = GetComponent<SpriteRenderer>();
         FoodRender.enabled = false;
         BoxCollider2D FoodCollider = GetComponent<BoxCollider2D>();
@@ -32,9 +36,6 @@ public class FoodInteract : MonoBehaviour
         await Task.Delay(waitingTime);
         FoodRender.enabled = true;
         FoodCollider.enabled = true;
-
-        foodPickUp.Play();
-
 
     }
 }
