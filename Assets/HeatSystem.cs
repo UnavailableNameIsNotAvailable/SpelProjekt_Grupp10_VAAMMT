@@ -17,7 +17,7 @@ public class HeatSystem : MonoBehaviour
     {
         if (true)
         {
-            TemperaturePoint -= 2 * Time.deltaTime;
+            TemperaturePoint -= 3 * Time.deltaTime;
         }
     }
     void Update()
