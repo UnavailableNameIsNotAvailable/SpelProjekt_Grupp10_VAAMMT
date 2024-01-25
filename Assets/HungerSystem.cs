@@ -20,7 +20,7 @@ public class HungerSystem : MonoBehaviour
     {//Minskar med 1 varje hunger tick
         if (true)
         {
-        HungerPoint -= 1 * Time.deltaTime;
+        HungerPoint -= 2 * Time.deltaTime;
         }
     }
     void Update()
