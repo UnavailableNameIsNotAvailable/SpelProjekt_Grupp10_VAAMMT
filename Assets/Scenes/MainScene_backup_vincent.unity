@@ -71155,7 +71155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b55c6bf38533fe94cbf4dfab37fd516f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TemperaturePoint: 0
+  TemperaturePoint: 100
 --- !u!1 &2111622402
 GameObject:
   m_ObjectHideFlags: 0
