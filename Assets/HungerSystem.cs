@@ -34,6 +34,10 @@ public class HungerSystem : MonoBehaviour
 
     public void AddHunger(int amount)
     {//Lägger till hunger från en annan skript
-        HungerPoint += amount;
+        if (HungerPoint < 100)
+        {
+            HungerPoint += amount;
+        }
+        
     }
 }

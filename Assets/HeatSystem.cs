@@ -29,6 +29,10 @@ public class HeatSystem : MonoBehaviour
     }
     public void AddHeat(int amount)
     {//Lägger till hunger från en annan skript
-        TemperaturePoint += amount;
+        if (TemperaturePoint < 100)
+        {
+            TemperaturePoint += amount;
+        }
+
     }
 }
