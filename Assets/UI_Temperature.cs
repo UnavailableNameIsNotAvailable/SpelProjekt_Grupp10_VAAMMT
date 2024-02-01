@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UI_Hunger : MonoBehaviour
+public class UI_Temperature : MonoBehaviour
 {
     [SerializeField]
-    HungerSystem hungerpoint;
+    HeatSystem temperaturepoint;
 
     [SerializeField]
-    GameObject HungerText;
+    GameObject TemperatureText;
 
     TextMeshProUGUI TextComponent;
     // Start is called before the first frame update
     void Start()
     {
-        TextComponent = HungerText.GetComponent<TextMeshProUGUI>();
+        TextComponent = TemperatureText.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        string HungerNumber = Mathf.Round(hungerpoint.HungerPoint) + "%";
+        string HungerNumber = Mathf.Round(temperaturepoint.TemperaturePoint) + "%";
         TextComponent.text = HungerNumber;
-        
+
     }
 }
+
