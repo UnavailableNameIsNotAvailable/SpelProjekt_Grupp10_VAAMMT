@@ -5,7 +5,7 @@ using UnityEngine;
 public class HeatZoneCollider : MonoBehaviour
 {
     HeatSystem Heat;
-    bool ifInsideZone = false;
+
     // Start is called before the first frame update
     void Start()
     {
