@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemypatroll : MonoBehaviour
 {
@@ -60,5 +61,12 @@ public class Enemypatroll : MonoBehaviour
 
     }
 
+    //Marcus NW 
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
 
 }
+
